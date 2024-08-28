@@ -66,7 +66,7 @@ const DetailedHeroPage: React.FC = () => {
             <Typography.Text className={styles.type}>
                Type: 
                <span style={{ fontWeight: 'bold' }}>
-                  {selectedHero?.type.length > 0 ? selectedHero?.type : 'unknown'}
+                  {selectedHero?.type && selectedHero.type.length > 0 ? selectedHero?.type : 'unknown'}
                </span>
             </Typography.Text>
             <Typography.Text className={styles.origin}>

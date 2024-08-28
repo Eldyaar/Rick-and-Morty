@@ -6,6 +6,10 @@
     "module": "ESNext",
     "skipLibCheck": true,
 
+    "types": [
+      "node", "jest", "@testing-library/jest-dom"
+    ],
+
     /* Bundler mode */
     "moduleResolution": "node",
     "allowImportingTsExtensions": true,
@@ -21,7 +25,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "tsconfig.test.json", "babel.config.cjs", "jest.config.ts", "setup-tests.ts"],
+  "include": ["src", "tsconfig.test.json", "babel.config.cjs", "jest.config.ts", "setupTests.ts"],
   "exclude": [
     "node_modules"
   ]

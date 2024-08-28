@@ -5,7 +5,7 @@ const config: Config.InitialOptions = {
    collectCoverageFrom: ['src/**/*.{ts, tsx}'],
    coverageDirectory: 'coverage',
    testEnvironment: 'jsdom',
-   setupFilesAfterEnv: ['<rootDir>/setup-tests.ts'],
+   setupFilesAfterEnv: ['<rootDir>/setupTests.ts'],
    transform: {
       '^.+\\.(ts|tsx)$': 'ts-jest',
    },
