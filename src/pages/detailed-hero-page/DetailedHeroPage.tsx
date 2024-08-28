@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { Result, Spin, Typography, Image, Flex, Tag } from 'antd'
 import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'

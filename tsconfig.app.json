@@ -13,9 +13,10 @@
     "moduleDetection": "force",
     "noEmit": true,
     "jsx": "react",
+    "esModuleInterop": true,
 
     /* Linting */
-    "strict": false,
+    "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
