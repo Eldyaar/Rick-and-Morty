@@ -9,11 +9,11 @@ describe('StatusFilter', () => {
     const handleStatusChange = jest.fn()
     render(<StatusFilter status="" handleStatusChange={handleStatusChange} />)
 
-    expect(screen.getByText('Filter by Status')).toBeInTheDocument()
-    expect(screen.getByText('All')).toBeInTheDocument()
-    expect(screen.getByText('Alive')).toBeInTheDocument()
-    expect(screen.getByText('Dead')).toBeInTheDocument()
-    expect(screen.getByText('Unknown')).toBeInTheDocument()
+    expect(screen.getByText('Filter by Status')).toBeTruthy()
+    expect(screen.getByText('All')).toBeTruthy()
+    expect(screen.getByText('Alive')).toBeTruthy()
+    expect(screen.getByText('Dead')).toBeTruthy()
+    expect(screen.getByText('Unknown')).toBeTruthy()
   })
 
   it('calls handleStatusChange when an option is selected', () => {
