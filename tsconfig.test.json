@@ -5,7 +5,7 @@
     "target": "ES6",
     "noEmit": true,
     "allowJs": true,
-    "jsx": "react"
+    "jsx": "react-jsx"
   },
   "include": [
     "src/**/*.test.ts",
