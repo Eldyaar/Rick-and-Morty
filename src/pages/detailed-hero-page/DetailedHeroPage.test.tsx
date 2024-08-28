@@ -1,11 +1,12 @@
+import React from 'react'
 import { render, screen, waitFor } from '@testing-library/react'
 import { Provider } from 'react-redux'
 import { MemoryRouter, Route } from 'react-router-dom'
-import { thunk } from 'redux-thunk'
-import { configureStore } from 'redux-mock-store'
-import {jest} from '@jest/globals'
+import thunk from 'redux-thunk'
+import configureStore from 'redux-mock-store'
+// import {jest} from '@jest/globals'
 import { RootState } from '../../store'
-import { getDetailHero } from '../../store/heroSlice'
+// import { getDetailHero } from '../../store/heroSlice'
 
 import DetailedHeroPage from './DetailedHeroPage'
 
@@ -25,14 +26,17 @@ describe('DetailedHeroPage', () => {
                name: 'Rick Sanchez',
                species: 'Human',
                status: 'Alive',
-               location: { name: 'Earth', url: '' },
+               location: { name: 'Earth', url: 'https://rickandmortyapi.com/api/location/3' },
                image: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg',
-               url: '',
-               episode: [],
-               created: '',
+               url: 'https://rickandmortyapi.com/api/character/2',
+               episode: ['https://rickandmortyapi.com/api/episode/1', 'https://rickandmortyapi.com/api/episode/2'],
+               created: '2017-11-04T18:50:21.651Z',
                type: '',
                gender: 'Male',
-               origin: { name: 'unknown', url: '' },
+               origin: {
+                  name: 'unknown',
+                  url: ''
+               },
             },
             heroLoading: false,
             heroError: null,
