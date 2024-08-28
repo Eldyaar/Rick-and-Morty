@@ -1,4 +1,3 @@
-import React from 'react'
 import { Card, Typography, Image, Tag, Flex } from 'antd'
 import { useNavigate } from 'react-router-dom'
 
